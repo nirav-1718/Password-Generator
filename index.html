@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title>Quick Password Generate</title>
+</head>
+<body>
+    
+    <div class="main-div">
+        <div class="card">
+            <h1>Password generator</h1>
+            <div class="output">
+                <div class="output-text box"><span>Click Generate</span></div>
+            </div>
+
+            <div class="row-label"><span>Length: </span><span><b id="lenVal">16</b></span></div>
+            <div class="box"><input type="range" id="length" class="box" min="4" max="32" value="16"></div>
+                
+            <div class="settings-label">Settings</div>
+            <div class="lable-btn box">
+                <span class="lable-text">include uppercase <span class="hint">A-Z</span></span>
+                <label class="switch"><input type="checkbox"id="upper" checked><span class="slider"></span></label>
+            </div>
+            <div class="lable-btn box">
+                <span class="lable-text">include lowercase <span class="hint">a-z</span></span>
+                <label class="switch"><input type="checkbox"id="lower" checked><span class="slider"></span></label>
+            </div>
+            <div class="lable-btn box">
+                <span class="lable-text">include Numbers <span class="hint">0-9</span></span>
+                <label class="switch"><input type="checkbox"id="number" checked><span class="slider"></span></label>
+            </div>
+            <div class="lable-btn box">
+                <span class="lable-text">include Symbols <span class="hint">!@#$%^&;*</span></span>
+                <label class="switch"><input type="checkbox"id="symbol" checked><span class="slider"></span></label>
+            </div>
+
+            <button class="generate-btn" id="generatebtn">GENERAT PASSWORD</button>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
